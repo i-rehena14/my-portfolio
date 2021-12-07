@@ -1,0 +1,31 @@
+.pr{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pr-texts{
+    width: 65%;
+}
+.pr-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.pr-description{
+    margin: 20px 0px;
+}
+.pr-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width:480px){
+    .pr{
+        padding: 10px;
+    }
+    .pr-texts{
+        width: 100%;
+    }
+}
