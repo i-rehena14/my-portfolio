@@ -4,7 +4,7 @@ import phone from '../../images/phone5.png';
 import email from '../../images/gmail.png';
 import address from '../../images/address2.png';
 import emailjs from 'emailjs-com';
-
+import swal from 'sweetalert';
 
 const ContactMe = () => {
     const formRef = useRef();
@@ -24,17 +24,17 @@ const ContactMe = () => {
             });
     }
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="contact-bg"></div>
             <div className="contact-wrapper">
                 <div className="contact-left">
                     <h1 className="contact-title">
-                        Let's Discuss your Projects
+                        Get In Touch
                     </h1>
                     <div className="contact-info">
                         <div className="info-item">
                             <img src={phone} alt="" className="icon" />
-                            +880-012345577
+                            +880-01537681963
                         </div>
                         <div className="info-item">
                             <img src={email} alt="" className="icon" />
@@ -48,7 +48,7 @@ const ContactMe = () => {
                 </div>
                 <div className="contact-right">
                     <p className="desc">
-                        <b>Whats your story? </b>Get In touch. Always freelancing if the right project comes along to me.
+                        <b>Whats your story? </b>
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" placeholder="Name" name="user_name" />
@@ -57,7 +57,7 @@ const ContactMe = () => {
                         <textarea name="message" placeholder="Message" rows="5"></textarea>
                         <button>Submit</button>
                         {done &&
-                            alert('Thanks you!!')
+                            swal("Thank You!", "Your message has been sent!")
                         }
                     </form>
                 </div>
