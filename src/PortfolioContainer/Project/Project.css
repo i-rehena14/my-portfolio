@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 .browser{
-    height: 20px;
+    height: 40px;
     background-color: rgb(221, 247, 241);
     display: flex;
     align-items: center;
@@ -15,8 +15,8 @@
     z-index: 2;
 }
 .circle{
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     margin: 3px;
     border-radius: 50%;
     background-color: white;
@@ -28,35 +28,8 @@
 .project:hover{
     transform: translateY(20px);
 }
-.project:before{
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background:linear-gradient(to bottom,rgba(251, 252, 249, 0.384),rgba(137, 177, 131, 0.616));
-    z-index: 2;
-    transition: 0.5s all;
-    opacity: 0;
-}
-.project:hover:before{
-    opacity: 1;
-}
-.info{
-    position: relative;
-    z-index: 3;
-    color:lavender;
-    opacity: 1;
-    transform: translateY(30px);
-    transition: 0.5s all;
-}
 
-.project:hover .info{
-    opacity: 1;
-    transform: translateY(0px);
-}
+
 
 .project:hover .p-img{
     transform: translateY(-100%);

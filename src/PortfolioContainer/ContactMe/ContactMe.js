@@ -24,7 +24,7 @@ const ContactMe = () => {
             });
     }
     return (
-        <div className="contact" id="contact">
+        <div className="contact mb-2" id="contact">
             <div className="contact-bg"></div>
             <div className="contact-wrapper">
                 <div className="contact-left">

@@ -5,11 +5,17 @@
     align-items: center;
     text-align: center;
 }
+.projects-bg{
+    width: 20px;
+    height: 100%;
+    background-color: darkgreen;
+    position: absolute;
+}
 .pr-texts{
     width: 65%;
 }
 .pr-title{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
 }
 .pr-description{

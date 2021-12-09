@@ -5,11 +5,12 @@ import { projects } from '../../data';
 
 const Projects = () => {
     return (
+
         <div className="pr" id="portfolio">
             <div className="pr-texts">
-                <h1 className="pr-title">
+                <h3 className="pr-title" style={{ color: 'DarkSlateGrey' }}>
                     My Projects
-                </h1>
+                </h3>
 
             </div>
             <div className="pr-list">
@@ -20,6 +21,8 @@ const Projects = () => {
                             name={project.name}
                             img={project.img}
                             link={project.link}
+                            github={project.github}
+                            details={project.details}
                         ></Project>
                     ))
                 }
