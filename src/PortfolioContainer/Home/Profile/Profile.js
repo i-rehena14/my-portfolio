@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import './Profile.css';
 import Particles from "react-tsparticles";
+import { Link } from 'react-router-dom';
 
 
 const Profile = () => {
@@ -70,13 +71,13 @@ const Profile = () => {
                             enable: true,
                             outMode: "bounce",
                             random: false,
-                            speed: 2,
+                            speed: 1,
                             straight: false,
                         },
                         number: {
                             density: {
                                 enable: true,
-                                value_area: 800,
+                                value_area: 700,
                             },
                             value: 80,
                         },
@@ -101,9 +102,10 @@ const Profile = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
 
                         <Nav className="ms-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link href="#about">About</Nav.Link>
                             <Nav.Link href="#portfolio">Projects</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                             <Nav.Link href="#contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
@@ -131,3 +133,6 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
+
