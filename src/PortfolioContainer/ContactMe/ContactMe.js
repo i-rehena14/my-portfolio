@@ -51,13 +51,13 @@ const ContactMe = () => {
                         <b>Whats your story? </b>
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Name" name="user_name" />
-                        <input type="text" placeholder="Subject" name="user_subject" />
-                        <input type="email" placeholder="Email" name="user_email" />
-                        <textarea name="message" placeholder="Message" rows="5"></textarea>
+                        <input type="text" placeholder="Name" name="user_name" required />
+                        <input type="text" placeholder="Subject" name="user_subject" required />
+                        <input type="email" placeholder="Email" name="user_email" required />
+                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
                         <button>Submit</button>
                         {done &&
-                            alert("Thank You!", "Your message has been sent!")
+                            swal("Thank You!", "Your message has been sent!")
                         }
                     </form>
                 </div>
