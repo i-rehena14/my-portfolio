@@ -57,7 +57,7 @@ const ContactMe = () => {
                         <textarea name="message" placeholder="Message" rows="5"></textarea>
                         <button>Submit</button>
                         {done &&
-                            swal("Thank You!", "Your message has been sent!")
+                            alert("Thank You!", "Your message has been sent!")
                         }
                     </form>
                 </div>
